@@ -5,7 +5,7 @@ import Spinner from '../../layout/Spinner';
 describe('Spinner', () => {
 	let wrapper;
 	beforeEach(() => {
-		wrapper = shallow(<Spinner />)
+		wrapper = shallow(<Spinner/>)
 	})
 
 	it('should render correctly', () => {
