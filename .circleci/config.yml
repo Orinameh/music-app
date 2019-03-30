@@ -39,8 +39,8 @@ jobs:
           command: yarn run test
 
       - run:
-          name: Generate code coverage
-          command: "./node_modules/.bin/nyc report --reporter=text-lcov"
+          name: Run Jest and Collect Coverage Reports"
+          command: jest --collectCoverage=true
 
       - store_artifacts:
           path: test-results.xml
