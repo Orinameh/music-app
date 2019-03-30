@@ -40,9 +40,9 @@ jobs:
       - run:
           name: Install JUnit coverage reporter
           command: yarn add --dev jest-junit
-      - run:
-          name: Run tests with JUnit as reporter
-          command: jest --ci --runInBand --reporters=default --reporters=jest-junit
+      # - run:
+      #     name: Run tests with JUnit as reporter
+      #     command: jest --ci --runInBand --reporters=default --reporters=jest-junit
 
       - store_artifacts:
           path: test-results.xml
